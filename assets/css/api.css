@@ -1,0 +1,102 @@
+table.api-schemas {
+  border: 0px solid #FFFFFF;
+  border-collapse: collapse;
+  max-width: 100%;
+  width: 100%; }
+  table.api-schemas tr > th {
+    padding-bottom: 15px; }
+  table.api-schemas tbody > tr:nth-of-type(odd) {
+    background-color: white; }
+  table.api-schemas tbody > tr:nth-of-type(even) {
+    background-color: #fafafa; }
+  table.api-schemas td:first-child {
+    font-family: "Courier New", "Courier 10 Pitch", "Ubuntu Mono", "Courier", monospace; }
+  table.api-schemas td > p {
+    margin-top: 0;
+    margin-bottom: 0; }
+  table.api-schemas ul li {
+    font-family: proxima-nova, sans-serif;
+    font-size: 0.97em; }
+
+span.api-required:after {
+  content: "required";
+  color: red;
+  font-size: 95%; }
+
+span.api-code {
+  padding: 2px 4px;
+  font-size: 95%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  word-break: break-word; }
+
+/* Create two unequal columns that floats next to each other */
+.api-req-col {
+  float: left;
+  padding: 12px; }
+
+.api-req-left {
+  max-width: 15%;
+  font-family: "Tahoma", sans-serif; }
+
+.api-req-right {
+  max-width: 85%; }
+
+div.api-req-row {
+  font-family: "Courier New", "Courier 10 Pitch", "Ubuntu Mono", "Courier", monospace;
+  border-color: #bfbfbf; }
+
+/* Clear floats after the columns */
+div.api-req-row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.api-req-endpoint {
+  color: #EF6C24; }
+
+.api-http {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 3px 10px;
+  border-radius: 8px;
+  color: #FFFFFF; }
+
+.api-http-small {
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: "Tahoma", sans-serif; }
+
+.http-get {
+  background-color: #6BBD5B; }
+
+.http-put {
+  background-color: #9B708B; }
+
+.http-post {
+  background-color: #248FB2; }
+
+.http-delete {
+  background-color: #E27A7A; }
+
+div.http-resp {
+  font-weight: 700;
+  padding: 5px;
+  margin-bottom: 5px; }
+
+.resp-ok {
+  background-color: rgba(0, 170, 19, 0.1);
+  color: #00AA13; }
+
+.resp-none {
+  background-color: rgba(0, 170, 19, 0.1);
+  color: #00AA13;
+  cursor: auto; }
+
+.resp-error {
+  background-color: rgba(229, 57, 53, 0.1);
+  color: #E53935; }

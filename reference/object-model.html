@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <title>Object Model | Music Service Documentation</title>
+    <base target="_self">
+    <meta name="description" content="A full list of the objects returned by the endpoints of the Music Service Web API. All Web API endpoints return data in JSON format. When a collection of... " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" value="notranslate">
+    <link rel="icon"  type="image/x-icon" href="../favicon.ico">
+
+    <!--stylesheets / link tags loaded here-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/monokai.css" />
+    <link rel="stylesheet" href="../assets/css/musictheme.css" />
+    <link rel="stylesheet" href="../assets/css/customstyles.css" />
+    <link rel="stylesheet" href="../assets/css/api.css" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/navgoco.jquery.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="nav#toc" data-offset="20">
+<div class="page-container">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container topnavlinks">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle topnav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle toggle-sidebar-button"  data-toggle="offcanvas" data-target=".sidebar-nav">
+                    <span class="sr-only">Toggle sidebar</span>
+                    <span class="sidebarToggle fa fa-columns fa-2x"></span>
+                </button>
+                    
+                    <a class="fa fa-home fa-lg navbar-brand" href="../index.html">
+                    &nbsp;<span class="projectTitle"> Music Service Documentation</span>
+                    
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- entries without drop-downs appear here -->
+                    
+                    
+                    
+                    
+                    <li><a href="https://github.com/AnneCYH" class="noCrossRef">Github Repo</a></li>
+                    
+                    
+                    
+                    <!-- entries with drop-downs appear here -->
+
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            <li><a href="../index.html">Music Service Web API (v1)</a></li>
+                            
+                            
+                            
+                            <li><a href="../index.html">Music Service Web API (v2)</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Resources<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            <li><a href="https://developer.example.com/" class="noCrossRef">Music Service Developer Documentation (Official)</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                    
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <!--start search-->
+                        <div id="search-demo-container">
+                 <form action="search.html" method="get">
+                <input type="text" id="search-input" placeholder="Search Music Service Web API..." name="query">
+                </form>
+                </div>
+                        <!--end search-->
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+
+            <!-- sidebar -->
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                <!--<ul class="nav">-->
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--<li><a href="#">Link 1</a></li>-->
+                    <!--<li><a href="#">Link 2</a></li>-->
+                    <!--<li><a href="#">Link 3</a></li>-->
+                <!--</ul>-->
+                
+
+
+
+
+
+<div class="mydocsidebar">
+<div class="sidebar-inner">
+<div class="productTitle">Music Service Web API</div>
+<!-- search bar -->
+
+<div class="sidebarSearchBar">
+<form action="search-music-service.html" method="get">
+  <div class="input-group search">
+    <input type="text" id="search-box" name="query" class="form-control" placeholder="Search Music Service Web API...">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" value="search">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+
+<!-- end search bar -->
+<ul id="docnavsidebar" class="docnav">
+    
+    <li class="level1"><a href="../index.html">Getting Started</a>
+        <ul style="display:none">
+            
+
+            
+            
+            <li class="level1items"><a href="../authorization.html">Authorization</a></li>
+            
+            
+
+            
+
+            
+        </ul>
+
+        
+    <li class="level1"><a href="../reference.html">Web API Reference</a>
+        <ul style="display:none">
+            
+
+            
+            
+            <li class="level1items open"><a href="../reference/object-model.html">Object Model</a></li>
+            
+            
+
+            
+
+            <li class="level2"><a class="subfoldersTitle" href="../reference/playlists.html">Playlists</a>
+                <ul style="display:none;">
+                    
+
+                    
+                    
+                    <li class="level2items"><a href="../reference/playlists/add-items-to-playlist.html">Add Items to a Playlist</a></li>
+                    
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    <li class="level2items"><a href="../reference/playlists/change-playlist-details.html">Change a Playlist's Details</a></li>
+                    
+                    
+
+                    
+
+                    
+                </ul>
+            </li>
+
+            
+
+            
+        </ul>
+
+        
+
+    </li>
+</ul>
+
+<hr class="resourceSeparator"></hr>
+<div class="relatedResources"></div>
+<ul id="entrypages">
+        
+    </li>
+</ul>
+</div>
+</div>
+<script>$("li.open").parents('li').toggleClass("open");</script>
+
+            </div>
+
+            <!-- main area -->
+            <div class="col-xs-12 col-sm-7">
+                
+                <h1>Object Model</h1>
+                 
+                 <div class="toc-main-column">
+                 
+<style>
+div#toc2 >ul::before {
+    content: "Table of Contents";
+    margin-left: -20px;
+}
+</style>
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc2').toc({ minimumHeaders: 2, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc2').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 80);
+  return false
+})
+
+});
+</script>
+
+<nav id="toc2"></nav>
+
+
+               </div>
+                
+<p>A full list of the objects returned by the endpoints of the Music Service Web API.</p>
+
+<p>All <a href="../reference.html">Web API endpoints</a> return data in JSON format.</p>
+
+<p>When a collection of objects is returned and the number of objects is variable,
+the collection is wrapped in a paging object to simplify retrieval of further objects.
+Some endpoints return simplified versions of the resource objects. For example,
+the /artists/{id}/albums endpoint returns only simplified album objects. Simplified
+objects always contain a link in the field <code class="language-plaintext highlighter-rouge">href</code> to an endpoint where full details
+of the object are available.</p>
+
+<h2 id="album-object-full">album object (full)</h2>
+
+<div style="width: 100%; overflow-x:auto;">
+<table class="api-schemas">
+  <colgroup>
+    <col style="width: 25%;" />
+    <col style="width: 25%;" />
+    <col style="width: 50%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Value Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>album_type</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+  
+  <p style="font-size: 95%;">enum: <span class="api-code">album</span> <span class="api-code">single</span> <span class="api-code">compilation</span></p>
+
+
+</td>
+      <td>The type of the album.</td>
+    </tr>
+    <tr>
+      <td>artists</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">array of objects</span>
+
+<p><span style="font-size: 95%;">object: <a href="../reference/object-model.html#artist-object-simplified">artist object (simplified)</a></span></p>
+</p>
+
+
+
+</td>
+      <td>The artists of the album. Each artist object includes a link in <code>href</code> to more
+          detailed information about the artist.</td>
+    </tr>
+    <tr>
+      <td>available_markets</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">array of strings</span>
+</p>
+
+
+
+</td>
+      <td>The markets in which the album is available: <a href="https://www.iban.com/country-codes">ISO 3166-1 alpha-2 country codes</a>.
+          Note that an album is considered available in a market when at least 1 of its tracks
+          is available in that market.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="artist-object-simplified">artist object (simplified)</h2>
+
+<div style="width: 100%; overflow-x:auto;">
+<table class="api-schemas">
+  <colgroup>
+    <col style="width: 25%;" />
+    <col style="width: 25%;" />
+    <col style="width: 50%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Value Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>external_urls</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">object</span>
+
+<p><span style="font-size: 95%;">object: <a href="../reference/object-model.html#external-url-object">external URL object</a></span></p>
+</p>
+
+
+
+</td>
+      <td>Known external URLs for this artist.</td>
+    </tr>
+    <tr>
+      <td>href</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+
+</td>
+      <td>A link to the Web API endpoint providing full details of the artist.</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+
+</td>
+      <td>The <a href="../index.html#music-service-uris-and-ids">Music Service ID</a>
+ for the artist.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+
+</td>
+      <td>The name of the artist.</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+  
+  <p style="font-size: 95%;">enum: <span class="api-code">artist</span></p>
+
+
+</td>
+      <td>The object type.</td>
+    </tr>
+    <tr>
+      <td>uri</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+
+</td>
+      <td>The <a href="../index.html#music-service-uris-and-ids">Music Service URI</a>
+ for the artist.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="external-url-object">external URL object</h2>
+
+<div style="width: 100%; overflow-x:auto;">
+<table class="api-schemas">
+  <colgroup>
+    <col style="width: 25%;" />
+    <col style="width: 25%;" />
+    <col style="width: 50%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value Type</th>
+      <th>Value Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{key}</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+
+</td>
+      <td>The type of the URL. <br />For example, <code>music-service</code> - The <a href="../index.html#music-service-uris-and-ids">Music Service URL</a>
+ for the object.</td>
+    </tr>
+    <tr>
+      <td>{value}</td>
+      <td>
+
+
+
+
+
+
+
+
+<p><span style="color: #808080; font-size: 95%;">string</span>
+</p>
+
+
+
+</td>
+      <td>An external, public URL to the object.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+                <div class="toc-main-column">
+                
+
+              </div>
+                 
+
+
+
+            </div><!-- /.col-xs-12 main -->
+
+            <div class="col-xs-12 col-sm-2 right-lane">
+              <div class="inner">
+
+
+<style>
+nav#toc >ul::before, nav#toc2 >ul::before {
+    content: "Table of Contents";
+}
+</style>
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 2, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 80);
+  return false
+})
+
+});
+$(window).scroll(function(){
+  $('nav#toc')[0].scrollTop=$(window).scrollTop();
+});
+</script>
+
+<nav id="toc"></nav>
+
+
+</div>
+
+              
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div><!--/.page-container-->
+
+
+
+<!--scripts loaded here-->
+
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/toc.js"></script>
+<script src="../assets/js/anchor.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $("#docnavsidebar").navgoco({
+            caretHtml: '',
+            accordion: true,
+            openClass: 'open', // open
+            save: false, // leave false or nav highlighting doesn't work right
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+
+    });
+
+</script>
+<script src="../assets/js/customscripts.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+            $('.row-offcanvas').toggleClass('active');
+        });
+    });
+</script>
+
+</body>
+
+</html>

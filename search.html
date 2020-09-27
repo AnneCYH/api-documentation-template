@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <title> | Music Service Documentation</title>
+    <base target="_self">
+    <meta name="description" content="           ... " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" value="notranslate">
+    <link rel="icon"  type="image/x-icon" href="./favicon.ico">
+
+    <!--stylesheets / link tags loaded here-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/monokai.css" />
+    <link rel="stylesheet" href="./assets/css/musictheme.css" />
+    <link rel="stylesheet" href="./assets/css/customstyles.css" />
+    <link rel="stylesheet" href="./assets/css/api.css" />
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/navgoco.jquery.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="nav#toc" data-offset="20">
+<div class="page-container">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container topnavlinks">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle topnav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle toggle-sidebar-button"  data-toggle="offcanvas" data-target=".sidebar-nav">
+                    <span class="sr-only">Toggle sidebar</span>
+                    <span class="sidebarToggle fa fa-columns fa-2x"></span>
+                </button>
+                    
+                    <a class="fa fa-home fa-lg navbar-brand" href="./index.html">
+                    &nbsp;<span class="projectTitle"> Music Service Documentation</span>
+                    
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- entries without drop-downs appear here -->
+                    
+                    
+                    
+                    
+                    <li><a href="https://github.com/AnneCYH" class="noCrossRef">Github Repo</a></li>
+                    
+                    
+                    
+                    <!-- entries with drop-downs appear here -->
+
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            <li><a href="./index.html">Music Service Web API (v1)</a></li>
+                            
+                            
+                            
+                            <li><a href="./index.html">Music Service Web API (v2)</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Resources<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            <li><a href="https://developer.example.com/" class="noCrossRef">Music Service Developer Documentation (Official)</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                    
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <!--start search-->
+                        <div id="search-demo-container">
+                 <form action="search.html" method="get">
+                <input type="text" id="search-input" placeholder="Search Music Service Web API..." name="query">
+                </form>
+                </div>
+                        <!--end search-->
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+
+            <!-- sidebar -->
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                <!--<ul class="nav">-->
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--<li><a href="#">Link 1</a></li>-->
+                    <!--<li><a href="#">Link 2</a></li>-->
+                    <!--<li><a href="#">Link 3</a></li>-->
+                <!--</ul>-->
+                
+
+
+
+
+
+<div class="mydocsidebar">
+<div class="sidebar-inner">
+<div class="productTitle">Tags</div>
+<!-- search bar -->
+
+<!-- end search bar -->
+<ul id="docnavsidebar" class="docnav">
+    
+    <li class="level1"><a href=".">Documentation tags</a>
+        <ul style="display:none">
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-getting-started.html">Getting started</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-content-types.html">Content types</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-navigation.html">Navigation</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-formatting.html">Formatting</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-publishing.html">Publishing</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-single-sourcing.html">Single-sourcing</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-collaboration.html">Collaboration</a></li>
+            
+            
+
+            
+
+            
+
+            
+            
+            <li class="level1items"><a href="./tag-troubleshooting.html">Troubleshooting</a></li>
+            
+            
+
+            
+
+            
+        </ul>
+
+        
+
+    </li>
+</ul>
+
+<hr class="resourceSeparator"></hr>
+<div class="relatedResources"></div>
+<ul id="entrypages">
+        
+    </li>
+</ul>
+</div>
+</div>
+<script>$("li.open").parents('li').toggleClass("open");</script>
+
+            </div>
+
+            <!-- main area -->
+            <div class="col-xs-12 col-sm-7">
+                
+                <h1> Search results</h2>
+                  
+                 <div class="toc-main-column">
+                 
+
+               </div>
+                <div style="display: none">
+<form action="search.html" method="get">
+  <div class="input-group search">
+    <input type="text" id="search-box" name="query" class="form-control" placeholder="">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" value="search">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div id="search-results"></div>
+
+<script>
+  window.store = {
+      
+          
+          
+      "glossary-html": {
+        "title": "Glossary",
+        "tags": "[]",
+        "content": "",
+        "url": "glossary.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "sample1-html": {
+        "title": "Sample 1",
+        "tags": "[&quot;getting-started&quot;, &quot;formatting&quot;]",
+        "content": "This is the English Sample 1 page.blah blahpublic class EnhancedFor{\tpublic static void main(String[] args)\t{\tint[] list ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\t\tint sum = sumListEnhanced(list);\t\tSystem.out.println(\"Sum of elements in list: \" + sum);\t\tSystem.out.println(\"Original List\");\t\tprintList(list);\t\tSystem.out.println(\"Calling addOne\");\t\taddOne(list);\t\tSystem.out.println(\"List after call to addOne\");\t\tprintList(list);\t\tSystem.out.println(\"Calling addOneError\");\t\taddOneError(list);\t\tSystem.out.println(\"List after call to addOneError. Note elements of list did not change.\");\t\tprintList(list);\t}\t// pre: list != null\t// post: return sum of elements\t// uses enhanced for loop\tpublic static int sumListEnhanced(int[] list)\t{\tint total = 0;\t\tfor(int val : list)\t\t{\ttotal += val;\t\t}\t\treturn total;\t}\t// pre: list != null\t// post: return sum of elements\t// use traditional for loop\tpublic static int sumListOld(int[] list)\t{\tint total = 0;\t\tfor(int i = 0; i &lt; list.length; i++)\t\t{\ttotal += list[i];\t\t\tSystem.out.println( list[i] );\t\t}\t\treturn total;\t}\t// pre: list != null\t// post: none.\t// The code appears to add one to every element in the list, but does not\tpublic static void addOneError(int[] list)\t{\tfor(int val : list)\t\t{\tval = val + 1;\t\t}\t}\t// pre: list != null\t// post: adds one to every element of list\tpublic static void addOne(int[] list)\t{\tfor(int i = 0; i &lt; list.length; i++)\t\t{\tlist[i]++;\t\t}\t}\tpublic static void printList(int[] list)\t{\tSystem.out.println(\"index, value\");\t\tfor(int i = 0; i &lt; list.length; i++)\t\t{\tSystem.out.println(i + \", \" + list[i]);\t\t}\t}}here is some js:&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;head&gt;    &lt;title&gt;Simple Map&lt;/title&gt;    &lt;meta name=\"viewport\" content=\"initial-scale=1.0\"&gt;    &lt;meta charset=\"utf-8\"&gt;    &lt;style&gt;      /* Always set the map height explicitly to define the size of the div       * element that contains the map. */      #map {        height: 100%;      }      /* Optional: Makes the sample page fill the window. */      html, body {        height: 100%;        margin: 0;        padding: 0;      }    &lt;/style&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;div id=\"map\"&gt;&lt;/div&gt;    &lt;script&gt;      var map;      function initMap() {        map = new google.maps.Map(document.getElementById('map'), {          center: {lat: -34.397, lng: 150.644},          zoom: 8        });      }    &lt;/script&gt;    &lt;script src=\"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap\"    async defer&gt;&lt;/script&gt;  &lt;/body&gt;&lt;/html&gt;this is the english version…Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).            sample      table                  row 1      row 1              row 2      row 2      ",
+        "url": "sample1.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "sample2-html": {
+        "title": "Sample2 topic",
+        "tags": "[&quot;getting-started&quot;, &quot;formatting&quot;]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "sample2.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "sample3-html": {
+        "title": "Sample3 topic",
+        "tags": "[&quot;publishing&quot;, &quot;stuff&quot;]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "sample3.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "sublevel1-html": {
+        "title": "Sublevel 1",
+        "tags": "[]",
+        "content": "Various versions have evolved over the yearsVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.will uncover many web sites stillVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.normal distribution of letters, as opposed to using ‘Content hereVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.",
+        "url": "sublevel1.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "sublevel2-html": {
+        "title": "Sublevel 2",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "sublevel2.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "sublevel3-html": {
+        "title": "Sublevel3",
+        "tags": "[&quot;getting-started&quot;, &quot;troubleshooting&quot;, &quot;formatting&quot;]",
+        "content": "Section 1Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Section 2It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Lorem Ipsum is that it hasVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Lorem Ipsum is simply 5Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established  6It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.The point of using Lorem Ipsum is that 7Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Various versions have evolved over the yearsVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.typesetting, remaining essentiallyLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.established fact that a reader will be distractedIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Various versions have evolved over the yearsVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.will uncover many web sites stillVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.normal distribution of letters, as opposed to using ‘Content hereVarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Section 13Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Section 14It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Section 15Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.Section 16Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy.",
+        "url": "sublevel3.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "subsublevel1-html": {
+        "title": "Subsublevel 1",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "subsublevel1.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "subsublevel2-html": {
+        "title": "Subsublevel 2",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "subsublevel2.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "subsublevel3-html": {
+        "title": "Subsublevel3",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "subsublevel3.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "thing1-html": {
+        "title": "Thing 1 topic",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Create a file called samplelist.yml in _data.",
+        "url": "thing1.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "thing2-html": {
+        "title": "Thing 2 topic",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Create a file called samplelist.yml in _data.Put something like this in it:toc:  - title: Group 1    subfolderitems:      - page: Thing 1        url: /thing1.html      - page: Thing 2        url: /thing2.html      - page: Thing 3        url: /thing3.html  - title: Group 2    subfolderitems:      - page: Piece 1        url: /piece1.html      - page: Piece 2        url: /piece2.html      - page: Piece 3        url: /piece3.html  - title: Group 3    subfolderitems:      - page: Widget 1        url: /widget1.html      - page: Widget 2        url: /widget2.html      - page: Widget 3        url: /widget3.htmlNow loop through it like this:&lt;div class=\"result\"&gt;&lt;h3&gt;Group 1&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\"/thing1.html\"&gt;Thing 1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"/thing2.html\"&gt;Thing 2&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"/thing3.html\"&gt;Thing 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Group 2&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\"/piece1.html\"&gt;Piece 1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"/piece2.html\"&gt;Piece 2&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"/piece3.html\"&gt;Piece 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Group 3&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\"/widget1.html\"&gt;Widget 1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"/widget2.html\"&gt;Widget 2&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\"/widget3.html\"&gt;Widget 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;",
+        "url": "thing2.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "thing3-html": {
+        "title": "Thing 3 topic",
+        "tags": "[]",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "url": "thing3.html",
+        "product": "Generic"
+      }
+      ,
+      
+    
+          
+      "index-html": {
+        "title": "Getting Started",
+        "tags": "[]",
+        "content": " Note: By using Music Service developer tools, you accept theMusic Service Developer Terms of Service.Based on simple REST principles, the Music Service Web API endpoints return JSON metadata about music artists, albums, and tracks, directly from the Music Service Data Catalogue.Web API also provides access to user related data, like playlists and music thatthe user saves in the Your Music library. Such access is enabled through selectiveauthorization, by the user.General InformationThe base address of Web API is https://api.example.com. The API provides a set ofendpoints, each with its own unique path. To access private data through the Web API,such as user profiles and playlists, an application must get the user's permissionto access the data. Authorization is via the Music Service Accounts service.RequestsThe Music Service Web API is based on REST principles. Data resources are accessed viastandard HTTPS requests in UTF-8 format to an API endpoint. Where possible, WebAPI uses appropriate HTTP verbs for each action:                        Method      Action                  GET      Retrieves resources              POST      Creates resources              PUT      \tChanges and/or replaces resources or collections              DELETE      Deletes resources      Music Service URIs and IDsIn requests to the Web API and responses from it, you will frequently encounterthe following parameters:                            Parameter      Value Type and Example      Value Description                  Music Service URI      string  example: music-service:track:6rqhFgbbKwnb9MLmUQDhG6        The resource identifier that you can enter, for example, in the Music Service Desktop          client's search box to locate an artist, album, or track. To find a Music Service           URI simply right-click (on Windows) or Ctrl-Click (on a Mac) on the artist's           or album's or track's name.              Music Service ID      string  example: 6rqhFgbbKwnb9MLmUQDhG6        The base-62 identifier that you can find at the end of the Music Service URI          (see above) for an artist, track, album, playlist, etc. Unlike a Music Service          URI, a Music Service ID does not clearly identify the type of resource; that           information is provided elsewhere in the call.              Music Service URL      string  example: http://open.example.com/track/6rqhFgbbKwnb9MLmUQDhG6        An HTML link that opens a track, album, app, playlist or other Music Service resource        in a Music Service client (which client is determined by the user's device and        account settings at play.example.com.      ",
+        "url": "index.html",
+        "product": "Music Service Web API"
+      }
+      ,
+      
+    
+          
+      "building-a-jekyll-theme-html": {
+        "title": "Create a Jekyll Documentation Theme from an Existing HTML Template",
+        "tags": "[]",
+        "content": "Introduction  theming a jekyll site is a lot easier than creating a WP site  start with an existing html framework, add a few jekyll tags, and you’re offChoose an HTML templatebootply is good. lots of responsive themes. just find some html that you think will work well.[http://www.codeply.com/go/rV7KhUjwCN]save this file as default.html in your project folder folder. make sure it loads and works well.Add configuration fileadd config.yml file with some boilerplate codeno need for bundle init right now. not using any gems, and want to keep it this way to maximize compatibiltyCreate a default layoutcreate layout folderput default.html into this folderput frontmatter tags in default.htmladd variables for site.title, site.description, page.titlein config file:highlighter: rougemarkdown: kramdownkramdown: input: GFM auto_ids: true hard_wrap: false syntax_highlighter: rougedefaults:  -    scope:      path: “”      type: “posts”    values:      layout: “post”      comments: true      search: true      sidebar: home  -    scope:      path: “”      type: “pages”    values:      layout: “page”      sidebar: homeCreate an index pageCreate index.md filetitle: Homepagepermalink: index.html—put frontmatter tags in there. this is a signpost that jekyll will start process the filetitlepermalink to think about how you want pages rendered. this is a doc site, so i want all links flattened in the root so that my site can be viewed offlineDefine where that content appears in your default layoutadd content tags into default where it makes sense for the content to appearcustomize the h1 tags with the titletitle: Homepagepermalink: index.html—This is some content.Now build the site with jekyll serve.make sure you have Ruby and RubyGems installed.Then use this:gem install jekyll bundlernot going to use bundler nowjekyll serve. you should see your content populated.Create another page and make sure that also gets populated.Customize the navigationlook in your html for the list items that are defined. we’ll store this information in a yaml format and loop through it. there are varying levels of sophistication for the sidebar. see my yaml tutorial.you can also just loop through all pages. put a tag or something in your pages and then use a for loop to iterate through them.add _data file. store some stuff there.set up syntax highlighting  syntax.css",
+        "url": "building-a-jekyll-theme.html",
+        "product": "Theme instructions"
+      }
+      ,
+      
+    
+          
+      "building-robust-navigation-html": {
+        "title": "Building Robust Sidebar Navigation",
+        "tags": "[]",
+        "content": "  Add navgoco jquery into a folder called assets/js.  add sidebar.css into assets/css.  add sidebar.html into _includes  in your layout, add a reference to jquery, then the navgocosidebar. also add a reference to the css  in defaults in your config, add a default for a sidebar property. also add for index.html  insert the include in your theme where you want navigation to appear, in the sidebar  add some default pages to test",
+        "url": "building-robust-navigation.html",
+        "product": "Theme instructions"
+      }
+      ,
+      
+    
+          
+      "building-navigation-html": {
+        "title": "Building navigation",
+        "tags": "[&quot;formatting&quot;]",
+        "content": "hey, I think you need to integrate information from this same page: http://jekyllrb.com/docs/datafiles/#the-data-folderthis is a good issues page: https://github.com/jekyll/jekyll-help/issues/266IntroductionInstead of hard-coding navigation links to pages, you can use Liquid logic to retrieve a list of pages. There are two primary ways of retrieving pages:  Retrieving pages listed in a YAML data source. The YAML is either stored in a separate data file (in the _data folder) or in the page’s front matter (and accessed through site variables). Note that the pages don’t need to be YAML only (.yaml or .yml). You could also use any files ending in .json or .csv. However, the markup-less structure in YAML makes it more readable, since the spacing drives the syntax.  Retrieving pages by looping through the page front matter. You can use for loops to look through the site.pages or site.collections spaces to retrieve pages or documents that have particular properties in their front matter. For loops create longer build times, but sometimes this approach can be more efficient.Note that the techniques described here for using Liquid and YAML will be brief, since you can view the full documentation for using these formats on other sites. The focus here is on building page-based navigation for a Jekyll site.The examples that folow start with a basic navigation scenario and add more sophisticated elements to demonstrate different ways of returning the pages.In almost every scenario, you’ll see 3 elements:  YAML  Liquid  ResultScenario 1: Basic ListYou want to return a basic list of pages.YAMLYou have a data file named samplelist.yml in _data.podcast_list_title: Favorite Podcastspodcasts:- title: This Week in Tech  url: https://twit.tv/shows/this-week-in-tech- title: Radio Lab  url: http://www.radiolab.org/- title: Night Vale  url: http://www.welcometonightvale.com/Liquid&lt;h2&gt;Favorite Podcasts&lt;/h2&gt;&lt;ul&gt;{% for item in site.data.samplelist.podcasts %}&lt;li&gt;&lt;a href=\"{{item.url}}\" alt=\"{{item.title}}\"&gt;{{item.title}}&lt;/a&gt;&lt;/li&gt;{% endfor %}&lt;/ul&gt;ResultFavorite PodcastsThis Week in TechRadio LabNight ValeWhen you use a for loop, you choose the variable of what to call the things you’re looping through. The variable you choose (in this case, item) becomes how you access the properties of each thing in the list. Dot notation is used to get each property of each thing (for example, item.url).The YAML content has two main types of formats that are relevant here:  mapping  listpodcast_list_title: My Favorite Podcasts is a mapping. You access the file with site.data.samplelist.podcasts: is a list. The list begins each item with a hyphen. Unlike with mappings, you can’t access list properties directly like you can with a mapping. If you want to access a specific item in the list, you must identify get the position in the list you want, following typical array notation. For example, site.data.samplelist.podcasts[0] would access the first item in the list.With lists, you usually don’t access positions using the [0] syntax. Instead, you use for loops to cycle through the list of items and do something with each item. With navigation menus, you’re usually insert each list item into li tags based on the navigation structure you’re building in your HTML theme.Each - indicates another item in the list. Here we list just two properties: title and url. You can list as many properties as you want for each item. The order of properties at each position in the list doesn’t matter.Sorting the listSuppose you wanted to sort the list by the title. To do this, convert the reference to the list to a variable, and then apply Liquid’s sort filter to the variable:Liquid{% assign podcasts = site.data.samplelist.podcasts | sort: 'title'  %}{% for item in podcasts %}{{item.title}}{% endfor %}ResultNight ValeRadio LabThis Week in TechThe sort property in the Liquid filter applies to the title. title is an actual property in the list. If title weren’t a property, this sorting method wouldn’t work.            See Liquid array filter for more filter options. Note that you can’t simply use  {% for item in site.data.samplelist.podcasts      sort: ‘title’ %} . You have to convert site.dat.samplelist.podcasts to a variable first using either assign or capture tags.      Scenario 2: Two-level navigation listNow let’s say you want a more robust list that incorporates heading titles and subitems. To do this, add an additional level to each list item to store this information:YAMLtoc:  - title: Group 1    subfolderitems:      - page: Thing 1        url: /thing1.html      - page: Thing 2        url: /thing2.html      - page: Thing 3        url: /thing3.html  - title: Group 2    subfolderitems:      - page: Piece 1        url: /piece1.html      - page: Piece 2        url: /piece2.html      - page: Piece 3        url: /piece3.html  - title: Group 3    subfolderitems:      - page: Widget 1        url: /widget1.html      - page: Widget 2        url: /widget2.html      - page: Widget 3        url: /widget3.htmlLiquid{% for item in site.data.samplelist.toc %}{{item.title}}{% for entry in item.subfolderitems %}{{entry.page}}{% endfor %}{% endfor %}ResultGroup 1Thing 1Thing 2Thing 3Group 2Piece 1Piece 2Piece 3Group 3Widget 1Widget 2Widget 3In this example, Group 1 is the first list item. Within that list item, its subpages are included as a property that itself contains a list. The Liquid code first looks through the first level with for item in site.data.samplelist.toc, and then looks through the second-level property with for entry in item.subfolderitems. Just as item is arbitrary, so is entry.Access the list from a page variableSuppose your sidebar will differ based on different documentation sets. You might have 3 different products on your site, and so you want 3 different sidebars — each being unique for that product.You can store the name of the sidebar list in your page front matter and then pass that value into the list dynamically.Page front matter---title: My pagesidebar: toc---Liquid{% for item in site.data.samplelist[page.sidebar] %}&lt;h3&gt;{{item.title}}&lt;/h3&gt;&lt;ul&gt;{% for entry in item.subfolderitems %}&lt;li&gt;&lt;a href=\"{{entry.url}}\"&gt;{{entry.page}}&lt;/a&gt;&lt;/li&gt;{% endfor %}&lt;/ul&gt;{% endfor %}ResultIn order to pass values from the page front matter into an assign variable, when the assigned variable isn’t a string but rather a data reference, you must use brackets (instead of curly braces) to refer to the front matter’s value. For more information, see Expressions and Variables in Liquid’s documentation. Brackets are used in places where dot notation can’t be used (see more details with this Stack Overflow answer.)Scenario: Apply active class selectivelyIn addition to inserting items from the YAML data file into your list, you also usually want to highlight the current link if the user is viewing that page. You do this by inserting an active class for items that match the current page URL.CSSa.active {  color: black;  font-weight: bold;  cursor: default;}LiquidResultScenario three: Conditional list{% for sec in site.data.samplelist.mypages %}{% if sec.audience == \"writers\" %}{{sec.url}}{% endif %}{% endfor %}Scenario: Separate sidebars per page  identify sidebar in page frontmatter, and pass that down to set which list gets usedScenario: Robust Multi-level menu using Navgoco  accordion, cookie, 3 level, expand/collapseloop through jsonhttp://stackoverflow.com/questions/41017809/jekyll-data-people-json-arrays-reforming-and-sortingFor loop through pagessee https://jekyllrb.com/docs/variables/. you can do for page in site.html_pages to make the looping faster.  no access to categories variable for pagesuse the uniq tag if you’re getting a list of all pages that have a tag. https://help.shopify.com/themes/liquid/filters/array-filters#uniqyou cannot do this:{% for p in site.categories.mycat %}  {{p.title}}{% endfor %}see http://stackoverflow.com/questions/11887929/how-do-i-loop-through-tags-in-a-jekyll-post?rq=1basic example:The code below dynamically generates a sidebar nav of pages with\t        layout: page in the front-matter. See readme for usage.\t            {% assign pages_list = site.pages %}\t\t          {% for node in pages_list %}\t\t\t          {% if node.title != null %}\t\t\t\t            {% if node.layout == \"page\" %}\t\t\t\t\t                &lt;a class=\"sidebar-nav-item{% if page.url == node.url %} active{% endif %}\" href=\"{{ site.baseurl }}{{ node.url  | remove_first: '/' }}\"&gt;{{ node.title }}&lt;/a&gt;\t\t\t\t\t\t\t          {% endif %}\t\t\t\t\t\t\t\t          {% endif %}\t\t\t\t\t\t\t\t\t  {% endfor %}For the pages we want in the navigation, we’ll add a navigation_weight to the front matter. The value of navigation_weight is a number which dictates the position it’s shown. For index.html we’ll add a navigation_weight of 1.layout: defaulttitle: Homenavigation_weight: 1—      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}    {% for p in navigation_pages %}      {% if p.navigation_weight %}                  &lt;a href=\"{{ p.url }}\" {% if p.url == page.url %}class=\"active\"{% endif %}&gt;            {{ p.title }}          &lt;/a&gt;              {% endif %}    {% endfor %}  …For loops with content stored in different collectionsfor doc in site.collections[collection_name] ??site.documents accesses a list of all the documents in every collection  load time for for loop through large number of pages is issuethose pages. also maybe provide collections as an example for doing that.",
+        "url": "building-navigation.html",
+        "product": "Theme instructions"
+      }
+      ,
+      
+    
+          
+      "tags-html": {
+        "title": "Tags",
+        "tags": "[]",
+        "content": "Whereas the sidebar provides navigation within the same product, tags provide navigation across all the products on your site. Each tag has a corresponding page (unlike the sidebar, which gets built into each page). Additionally, tags are supported within the translation strategy. There’s a collection for tags, with different tag collections by language.For example, here’s the tag collection for Japanese content:collections:  tags_ja:    output: trueThe tag docs are contained in _tag, _tag_ja, and _tag_de.The defaults in the config file specifies the tag_group property:defaults:    scope:      path: \"\"      type: docs_ja    values:      tag_group: taglist_jaThis tag_group property then gets passed to tags.html, which is included in the default layout:{% for tag in page.tags %}{% assign doctags = site.data[page.tag_group] %}The tag_group value then specifies either taglist.yml, taglist_ja.yml, or taglist_de.yml from the _data folder.The tags.html code looks at the tags specified for the page, loops through the taglist data file for a match, and if it finds a match, includes the tag on the page. The tag is linked to a tag doc that gathers all other docs that also contain that same tag.These tag pages are contained in _tags, _tags_ja, and _tags_de. Their logic is re-purposed from the same include stored in taglogic.html. The taglogic file looks through the collection to find all docs that contain the tag, and then lists them in a table.",
+        "url": "tags.html",
+        "product": ""
+      }
+      ,
+      
+    
+          
+      "translation-html": {
+        "title": "How translation works",
+        "tags": "[]",
+        "content": "Some assumptions:  Permalinks (URLs) for the pages remain the same (and aren’t translated).  Links in page content remain the same across languages.The “page” or “post” content types aren’t used. Documentation content is stored in collections. Each language has its own collection:  _docs: English  _docs_ja: Japanese  _docs_de: GermanThere are also 3 config files:  _config.yml: English  _config_ja.yml: Japanese  _config_de.yml: GermanEach config file declares the collection for that language. Here’s the English _config.yml file:collections:  docs:    output: trueAnd the Japanese _config_ja.yml file:collections:  docs_ja:    output: trueAnd the German _config_de.yml file:collections:  docs_de:    output: trueDepending on the configuration file you use, the site will include only that collection. This way Japanese builds won’t contain English or German docs, nor will German builds contain Japanese or English docs.This also ensures that a permalink in an English doc won’t conflict with the same permalink in a German or Japanese doc.The sidebar and topnav should also switch to the right language as well. These sidebar receives it configuration from the page front matter.---title: Sample 1permalink: sample1.htmlsidebar: generic---The sidebar value then gets passed into sidebar.html include, which is included in the default layout:{% assign sidebar = site.data[page.sidebar] %}&lt;div class=\"productTitle\"&gt;{{sidebar.sidebarTitle}}&lt;/div&gt;&lt;ul id=\"docnavsidebar\" class=\"docnav\"&gt;    {% for folder in sidebar.folders %}    ...The value for topnav is likewise passed into the default layout:{% assign topnav = site.data[page.topnav] %}{% for entry in topnav.navbar_singleitems %}However, rather than specifying the topnav value in each page’s frontmatter, as is done with sidebar, this value is set as a default in the config file for that language. This is because the topnav is the same for all docs in that collection, but each collection can have multiple sidebars.Here’s the config defaults for English:    defaults:      -        scope:          path: \"\"          type: docs        values:          layout: default          topnav: topnavAnd for Japanese:defaults:  -    scope:      path: \"\"      type: docs_ja    values:      layout: default      topnav: topnav_jaAnd for German:defaults:  -    scope:      path: \"\"      type: docs_de    values:      layout: default      topnav: topnav_deUI strings also change based on the config file. Here are the UI strings for English:uistring:    title: Jekyll Documentation theme # Displays as site title on top nav bar and on site metadata    description: Documentation theme for Jekyll websites  # Displays as site description meta    search_placeholder: Search ...    minitoc_title: Table of Contents    github_edit_button_text: Edit me    tag_terms:      product: Product      page: Page      excerpt: Excerpt      tag_page_intro: The following pages are tagged withThe config files for Japanese and German look the same but with different translations.Tags are also translated. Since tags are more complex, they’re explained in Tags.",
+        "url": "translation.html",
+        "product": ""
+      }
+      ,
+      
+    
+          
+      "authorization-html": {
+        "title": "Authorization Guide",
+        "tags": "[&quot;authorization&quot;]",
+        "content": "To have the end user approve your app for access to their Music Service data and features,or to have your app fetch data from Music Service, you need to authorize your application.Your app can be authorized by Music Service in two ways:  App Authorization: Music Service authorizes your app to access the Music Service Platform(APIs, SDKs and Widgets).  User Authorization: Music Service, as well as the user, grant your app permissionto access and/or modify the user's own data. For information about User Authentication,see User Authentication with OAuth 2.0. Calls to the Music Service Web API requireauthorization by your application user. To get that authorization, your applicationgenerates a call to the Music Service Accounts Service /authorize endpoint, passing alonga list of the scopes for which access permission is sought.",
+        "url": "authorization.html",
+        "product": "Music Service Web API"
+      }
+      ,
+      
+    
+          
+      "reference-html": {
+        "title": "Web API Reference",
+        "tags": "[]",
+        "content": "Web API endpoints enable external applications to access the Music Service catalog anduser data. The endpoints are arranged in a structure defined by an object model.  Playlists",
+        "url": "reference.html",
+        "product": "Music Service Web API"
+      }
+      ,
+      
+    
+          
+      "reference-object-model-html": {
+        "title": "Object Model",
+        "tags": "[]",
+        "content": "A full list of the objects returned by the endpoints of the Music Service Web API.All Web API endpoints return data in JSON format.When a collection of objects is returned and the number of objects is variable,the collection is wrapped in a paging object to simplify retrieval of further objects.Some endpoints return simplified versions of the resource objects. For example,the /artists/{id}/albums endpoint returns only simplified album objects. Simplifiedobjects always contain a link in the field href to an endpoint where full detailsof the object are available.album object (full)                            Key      Value Type      Value Description                  album_type      string    enum: album single compilation      The type of the album.              artists      array of objectsobject: artist object (simplified)      The artists of the album. Each artist object includes a link in href to more          detailed information about the artist.              available_markets      array of strings      The markets in which the album is available: ISO 3166-1 alpha-2 country codes.          Note that an album is considered available in a market when at least 1 of its tracks          is available in that market.      artist object (simplified)                            Key      Value Type      Value Description                  external_urls      objectobject: external URL object      Known external URLs for this artist.              href      string      A link to the Web API endpoint providing full details of the artist.              id      string      The Music Service ID for the artist.              name      string      The name of the artist.              type      string    enum: artist      The object type.              uri      string      The Music Service URI for the artist.      external URL object                            Key      Value Type      Value Description                  {key}      string      The type of the URL. For example, music-service - The Music Service URL for the object.              {value}      string      An external, public URL to the object.      ",
+        "url": "referenceobject-model.html",
+        "product": "Music Service Web API"
+      }
+      ,
+      
+    
+          
+      "reference-playlists-html": {
+        "title": "Playlists",
+        "tags": "[]",
+        "content": "Endpoints for retrieving information about a user’s playlists and for managing auser’s playlists.See also: Working with Playlists.                                Method      Endpoint      Usage      Returns                      POST      /v1/playlists/{playlist_id}/tracks      Add Items to a Playlist      -                  PUT      /v1/playlists/{playlist_id}      Change a Playlist's Details      -                  GET      /v1/playlists/{playlist_id}/tracks      Get a Playlist's Items      tracks                  DELETE      /v1/playlists/{playlist_id}/tracks      \tRemove Items from a Playlist      -      ",
+        "url": "referenceplaylists.html",
+        "product": "Music Service Web API"
+      }
+      ,
+      
+    
+          
+      "reference-playlists-add-items-to-playlist-html": {
+        "title": "Add Items to a Playlist",
+        "tags": "[]",
+        "content": "Add one or more items to a user's playlist.Endpoint      POST        https://api.example.com/v1/playlists/{playlist_id}/tracks  Request ParametersPath Parameters                            Path Parameters      Value Type      Value Description                  playlist_id       string    enum: album single compilation      The Music Service ID for the playlist.      Header Fields                            Header Fields      Value Type      Value Description                  Authorization       string      A valid access token from the Spotify Accounts service: see theWeb API Authorization Guide for details.The access token must have been issued on behalf of the user.          Adding items to the current user's public playlists requires authorization            of the playlist-modify-public scope; adding items to the current            user's private playlist (including collaborative playlists) requires the            playlist-modify-private scope.                        Content-Type       string    enum: application/json      Required if URIs are passed in the request body, otherwise ignored.  The content type of the request body.      Query ParametersThe Spotify URIs of the items to add can be passed either in the query string or asa JSON array in the request body.Passing them in the query string:                            Query Parameters      Value Type      Value Description                  uris      string  example: uris=music-service:track:4iV5W9uYEdYUVa79Axb7Rh,music-service:track:1301WleyT98MSxVHPZCA6M,music-service:episode:512ojhOuo1ktJprKbVcKyQ        A comma-separted list of Music Service URIs to add.          A maximum of 100 items can be added in one request. Note: it is likely that passing a large          number of item URIs as a query parameter will exceed the maximum length of the request URI.          When adding a large number of items it is recommended to pass them in the request body.              position      integer  example: position=2        The position to insert the items, a zero-based index. For example, to insert        the items in the first position: position=0; to insert the items in the third position:        position=2. If omitted, the items will be appended to the playlist. Items are added        in the order they are listed in the query string or request body.      Request SamplePOST https://api.example.com/v1/playlists/6rqhFgbbKwnb9MLmUQDhG6/tracks?uris=music-service:track:4iV5W9uYEdYUVa79Axb7Rh,music-service:episode:512ojhOuo1ktJprKbVcKyQ&amp;position=2Authorization: Basic *&lt;base64 encoded client_id:client_secret&gt;*Accept: application/jsonResponse201 Created                            Key      Value Type      Value Description                  snapshot_id      string  example: JbtmHBDBAYu3/bt8BOXKjzKx3i0b6LCa/wVjyl6qQ2Yf6nFXkbmzuEa+ZI/U1yF+        The snapshot_id can be used to identify your playlist version in future requests.       Response SampleHTTP/1.1 201 CreatedContent-Type: application/jsonContent-length: xxx{  \"snapshot_id\" : \"JbtmHBDBAYu3/bt8BOXKjzKx3i0b6LCa/wVjyl6qQ2Yf6nFXkbmzuEa+ZI/U1yF+\"}",
+        "url": "referenceplaylistsadd-items-to-playlist.html",
+        "product": "Music Service Web API"
+      }
+      ,
+      
+    
+          
+      "reference-playlists-change-playlist-details-html": {
+        "title": "Change a Playlist's Details",
+        "tags": "[]",
+        "content": "Change a playlist's name and public/private state. (The user must, of course, own  the playlist.)Endpoint      PUT        https://api.example.com/v1/playlists/{playlist_id}  Request ParametersPath Parameters                            Path Parameters      Value Type      Value Description                  playlist_id       string    enum: album single compilation      The Music Service ID for the playlist.      Header Fields                            Header Fields      Value Type      Value Description                  Authorization       string      A valid access token from the Spotify Accounts service: see theWeb API Authorization Guide for details.The access token must have been issued on behalf of the user.          Adding items to the current user's public playlists requires authorization            of the playlist-modify-public scope; adding items to the current            user's private playlist (including collaborative playlists) requires the            playlist-modify-private scope.                        Content-Type       string    enum: application/json      Required if URIs are passed in the request body, otherwise ignored.  The content type of the request body.      Query ParametersThe Spotify URIs of the items to add can be passed either in the query string or asa JSON array in the request body.Passing them in the query string:                            Query Parameters      Value Type      Value Description                  uris      string  example: uris=music-service:track:4iV5W9uYEdYUVa79Axb7Rh,music-service:track:1301WleyT98MSxVHPZCA6M,music-service:episode:512ojhOuo1ktJprKbVcKyQ        A comma-separted list of Music Service URIs to add.          A maximum of 100 items can be added in one request. Note: it is likely that passing a large          number of item URIs as a query parameter will exceed the maximum length of the request URI.          When adding a large number of items it is recommended to pass them in the request body.              position      integer  example: position=2        The position to insert the items, a zero-based index. For example, to insert        the items in the first position: position=0; to insert the items in the third position:        position=2. If omitted, the items will be appended to the playlist. Items are added        in the order they are listed in the query string or request body.      Request SamplePOST https://api.example.com/v1/playlists/6rqhFgbbKwnb9MLmUQDhG6/tracks?uris=music-service:track:4iV5W9uYEdYUVa79Axb7Rh,music-service:episode:512ojhOuo1ktJprKbVcKyQ&amp;position=2Authorization: Basic *&lt;base64 encoded client_id:client_secret&gt;*Accept: application/jsonResponse201 Created                            Key      Value Type      Value Description                  snapshot_id      string  example: JbtmHBDBAYu3/bt8BOXKjzKx3i0b6LCa/wVjyl6qQ2Yf6nFXkbmzuEa+ZI/U1yF+        The snapshot_id can be used to identify your playlist version in future requests.       Response SampleHTTP/1.1 201 CreatedContent-Type: application/jsonContent-length: xxx{  \"snapshot_id\" : \"JbtmHBDBAYu3/bt8BOXKjzKx3i0b6LCa/wVjyl6qQ2Yf6nFXkbmzuEa+ZI/U1yF+\"}",
+        "url": "referenceplaylistschange-playlist-details.html",
+        "product": "Music Service Web API"
+      }
+      
+      
+    
+          
+          
+          
+    
+          
+    
+          
+    
+          
+    
+          
+    
+          
+    
+          
+    
+          
+    
+  };
+</script>
+
+<script src="assets/js/lunr.min.js"></script>
+<script src="assets/js/search.js"></script>
+
+                <div class="toc-main-column">
+                
+
+              </div>
+                
+
+
+            </div><!-- /.col-xs-12 main -->
+
+            <div class="col-xs-12 col-sm-2 right-lane">
+              <div class="inner">
+
+
+</div>
+
+              
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div><!--/.page-container-->
+
+
+
+<!--scripts loaded here-->
+
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/toc.js"></script>
+<script src="./assets/js/anchor.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $("#docnavsidebar").navgoco({
+            caretHtml: '',
+            accordion: true,
+            openClass: 'open', // open
+            save: false, // leave false or nav highlighting doesn't work right
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+
+    });
+
+</script>
+<script src="./assets/js/customscripts.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+            $('.row-offcanvas').toggleClass('active');
+        });
+    });
+</script>
+
+</body>
+
+</html>

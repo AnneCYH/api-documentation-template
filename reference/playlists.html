@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+    <meta charset="utf-8">
+    <title>Playlists | Music Service Documentation</title>
+    <base target="_self">
+    <meta name="description" content="Endpoints for retrieving information about a user’s playlists and for managing a user’s playlists. See also: Working with Playlists.    <col style="width: 10%;"... " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" value="notranslate">
+    <link rel="icon"  type="image/x-icon" href="../favicon.ico">
+
+    <!--stylesheets / link tags loaded here-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/monokai.css" />
+    <link rel="stylesheet" href="../assets/css/musictheme.css" />
+    <link rel="stylesheet" href="../assets/css/customstyles.css" />
+    <link rel="stylesheet" href="../assets/css/api.css" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/navgoco.jquery.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="nav#toc" data-offset="20">
+<div class="page-container">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container topnavlinks">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle topnav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle toggle-sidebar-button"  data-toggle="offcanvas" data-target=".sidebar-nav">
+                    <span class="sr-only">Toggle sidebar</span>
+                    <span class="sidebarToggle fa fa-columns fa-2x"></span>
+                </button>
+                    
+                    <a class="fa fa-home fa-lg navbar-brand" href="../index.html">
+                    &nbsp;<span class="projectTitle"> Music Service Documentation</span>
+                    
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- entries without drop-downs appear here -->
+                    
+                    
+                    
+                    
+                    <li><a href="https://github.com/AnneCYH" class="noCrossRef">Github Repo</a></li>
+                    
+                    
+                    
+                    <!-- entries with drop-downs appear here -->
+
+                    
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            <li><a href="../index.html">Music Service Web API (v1)</a></li>
+                            
+                            
+                            
+                            <li><a href="../index.html">Music Service Web API (v2)</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Resources<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            <li><a href="https://developer.example.com/" class="noCrossRef">Music Service Developer Documentation (Official)</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    
+                    
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <!--start search-->
+                        <div id="search-demo-container">
+                 <form action="search.html" method="get">
+                <input type="text" id="search-input" placeholder="Search Music Service Web API..." name="query">
+                </form>
+                </div>
+                        <!--end search-->
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
+
+            <!-- sidebar -->
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                <!--<ul class="nav">-->
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--<li><a href="#">Link 1</a></li>-->
+                    <!--<li><a href="#">Link 2</a></li>-->
+                    <!--<li><a href="#">Link 3</a></li>-->
+                <!--</ul>-->
+                
+
+
+
+
+
+<div class="mydocsidebar">
+<div class="sidebar-inner">
+<div class="productTitle">Music Service Web API</div>
+<!-- search bar -->
+
+<div class="sidebarSearchBar">
+<form action="search-music-service.html" method="get">
+  <div class="input-group search">
+    <input type="text" id="search-box" name="query" class="form-control" placeholder="Search Music Service Web API...">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" value="search">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+
+<!-- end search bar -->
+<ul id="docnavsidebar" class="docnav">
+    
+    <li class="level1"><a href="../index.html">Getting Started</a>
+        <ul style="display:none">
+            
+
+            
+            
+            <li class="level1items"><a href="../authorization.html">Authorization</a></li>
+            
+            
+
+            
+
+            
+        </ul>
+
+        
+    <li class="level1"><a href="../reference.html">Web API Reference</a>
+        <ul style="display:none">
+            
+
+            
+            
+            <li class="level1items"><a href="../reference/object-model.html">Object Model</a></li>
+            
+            
+
+            
+
+            <li class="level2"><a class="subfoldersTitle" href="../reference/playlists.html">Playlists</a>
+                <ul style="display:none;">
+                    
+
+                    
+                    
+                    <li class="level2items"><a href="../reference/playlists/add-items-to-playlist.html">Add Items to a Playlist</a></li>
+                    
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    <li class="level2items"><a href="../reference/playlists/change-playlist-details.html">Change a Playlist's Details</a></li>
+                    
+                    
+
+                    
+
+                    
+                </ul>
+            </li>
+
+            
+
+            
+        </ul>
+
+        
+
+    </li>
+</ul>
+
+<hr class="resourceSeparator"></hr>
+<div class="relatedResources"></div>
+<ul id="entrypages">
+        
+    </li>
+</ul>
+</div>
+</div>
+<script>$("li.open").parents('li').toggleClass("open");</script>
+
+            </div>
+
+            <!-- main area -->
+            <div class="col-xs-12 col-sm-7">
+                
+                <h1>Playlists</h1>
+                 
+                 <div class="toc-main-column">
+                 
+<style>
+div#toc2 >ul::before {
+    content: "Table of Contents";
+    margin-left: -20px;
+}
+</style>
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc2').toc({ minimumHeaders: 2, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc2').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 80);
+  return false
+})
+
+});
+</script>
+
+<nav id="toc2"></nav>
+
+
+               </div>
+                
+<p>Endpoints for retrieving information about a user’s playlists and for managing a
+user’s playlists.</p>
+
+<p>See also: <a href="https://developer.example.com/documentation/general/guides/working-with-playlists/">Working with Playlists</a>.</p>
+
+<div style="width: 100%; overflow-x:auto;">
+<table class="api-schemas">
+  <colgroup>
+    <col style="width: 10%;" />
+    <col style="width: 35%;" />
+    <col style="width: 35%;" />
+    <col style="width: 20%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Usage</th>
+      <th>Returns</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td><span class="api-http-small http-post">POST</span></td>
+      <td><a href="../reference/playlists/add-items-to-playlist.html">/v1/playlists/{playlist_id}/tracks</a></td>
+      <td>Add Items to a Playlist</td>
+      <td>-</td>
+    </tr>
+
+    
+    <tr>
+      <td><span class="api-http-small http-put">PUT</span></td>
+      <td><a href="../reference/playlists/change-playlist-details.html">/v1/playlists/{playlist_id}</a></td>
+      <td>Change a Playlist's Details</td>
+      <td>-</td>
+    </tr>
+
+    
+    <tr>
+      <td><span class="api-http-small http-get">GET</span></td>
+      <td><a href="../reference/playlists/add-items-to-playlist.html">/v1/playlists/{playlist_id}/tracks</a></td>
+      <td>Get a Playlist's Items</td>
+      <td>tracks</td>
+    </tr>
+
+    
+    <tr>
+      <td><span class="api-http-small http-delete">DELETE</span></td>
+      <td><a href="../reference/playlists/add-items-to-playlist.html">/v1/playlists/{playlist_id}/tracks</a></td>
+      <td>	Remove Items from a Playlist</td>
+      <td>-</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+
+                <div class="toc-main-column">
+                
+
+              </div>
+                 
+
+
+
+            </div><!-- /.col-xs-12 main -->
+
+            <div class="col-xs-12 col-sm-2 right-lane">
+              <div class="inner">
+
+
+<style>
+nav#toc >ul::before, nav#toc2 >ul::before {
+    content: "Table of Contents";
+}
+</style>
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 2, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 80);
+  return false
+})
+
+});
+$(window).scroll(function(){
+  $('nav#toc')[0].scrollTop=$(window).scrollTop();
+});
+</script>
+
+<nav id="toc"></nav>
+
+
+</div>
+
+              
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+</div><!--/.page-container-->
+
+
+
+<!--scripts loaded here-->
+
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/toc.js"></script>
+<script src="../assets/js/anchor.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $("#docnavsidebar").navgoco({
+            caretHtml: '',
+            accordion: true,
+            openClass: 'open', // open
+            save: false, // leave false or nav highlighting doesn't work right
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+
+    });
+
+</script>
+<script src="../assets/js/customscripts.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+            $('.row-offcanvas').toggleClass('active');
+        });
+    });
+</script>
+
+</body>
+
+</html>
